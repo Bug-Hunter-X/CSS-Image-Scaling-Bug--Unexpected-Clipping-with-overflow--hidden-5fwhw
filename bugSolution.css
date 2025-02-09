@@ -1,0 +1,17 @@
+The following corrected CSS code addresses the issue by using the `object-fit` property:
+
+```css
+div {
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+}
+
+div img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+```
+
+The `object-fit: cover;` property ensures that the image covers the entire container, maintaining its aspect ratio and preventing clipping.  Other values for `object-fit` offer different scaling behaviors as needed.
