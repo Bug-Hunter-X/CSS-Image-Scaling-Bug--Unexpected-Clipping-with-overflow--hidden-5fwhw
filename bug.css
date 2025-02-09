@@ -1,0 +1,16 @@
+The following CSS code snippet causes unexpected behavior in some browsers:
+
+```css
+div {
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+}
+
+div img {
+  width: 100%;
+  height: auto;
+}
+```
+
+This code intends to display an image within a div, scaling the image to fit the div while maintaining its aspect ratio. However, some browsers might interpret this incorrectly, leading to unexpected clipping or scaling issues.
